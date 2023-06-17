@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }} - Toby Henley Smith</title> <!-- Sets the title of the web page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Links the CSS stylesheet -->
+</head>
+<body>
+   <nav>
+    <ul id="nav-menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+        <li><a href="{{ url_for('experience') }}">Experience</a></li>
+        <li><a href="{{ url_for('education') }}">Education</a></li>
+    </ul>
+    <!-- Comment: The hamburger icon -->
+    <div class="nav-toggle" id="nav-toggle">
+        <span>&#9776;</span>
+    </div>
+</nav>
+    <div class="header">
+        <h1>Welcome to Toby Henley Smith's Website</h1> <!-- Page header -->
+    </div>
+    <div class="container">
+        {% block content %}{% endblock %} <!-- This is where the content of child templates will be inserted -->
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Links the JavaScript file -->
+</body>
+</html>
