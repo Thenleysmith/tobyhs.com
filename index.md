@@ -1,5 +1,17 @@
-# Home page
-This is the home page
+---
+layout: default
+title: Home
+---
 
-[Link to Second Page](page-2)
+# Toby Henley Smith
+
+Welcome to my personal website! I'm Analytics Engineering Manager at Moneybox.
+
+
+## Contact
+- [GitHub](your-github-link)
+- [LinkedIn](your-linkedin-link)
+- [Email](mailto:your-email)
+
+[View More →](page-2)
 
